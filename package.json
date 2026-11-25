@@ -1,0 +1,9 @@
+{
+  "name": "trevixa-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Trevixa Media — Marketing Agency Portfolio",
+  "scripts": {
+    "start": "node server.js"
+  }
+}

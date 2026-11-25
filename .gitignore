@@ -1,0 +1,23 @@
+# Dependencies
+node_modules/
+
+# Environment & sensitive files
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.pfx
+secrets/
+credentials*.json
+
+# Raw unoptimized source videos (several .MOV files are 106–193 MB, exceeding GitHub's 100 MB limit).
+# Original files remain untouched locally; all web-ready images, designs, thumbnails, and MP4s live in media/.
+trevixa_media/
+
+# Logs & temp
+*.log
+npm-debug.log*
+.DS_Store
+Thumbs.db
+desktop.ini

@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Trevixa Media — Turning Vision Into Visibility</title>
+  <meta name="description" content="Trevixa Media is a creative marketing and production agency specializing in short-form reels, studio food photography, brand creatives, sports coverage, and venue films." />
+  <link rel="icon" type="image/jpeg" href="media/logo/TM_Logo.jpeg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#top" class="brand" aria-label="Trevixa Media Home">
+        <div class="brand-mark">
+          <img src="media/logo/TM_Logo.jpeg" alt="Trevixa Media TM Logo" />
+        </div>
+        <div class="brand-wordmark">
+          <span class="brand-name">TREVIXA</span>
+          <span class="brand-sub">MEDIA</span>
+        </div>
+      </a>
+
+      <nav class="nav-links" id="navLinks" aria-label="Primary">
+        <a href="#work">Selected Work</a>
+        <a href="#case-study">Case Study</a>
+        <a href="#capabilities">Capabilities</a>
+        <a href="#process">Process</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="#contact" class="btn btn-primary btn-sm">Start a Project</a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle Menu" aria-expanded="false">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <div class="eyebrow">Creative Marketing &amp; Production Agency</div>
+          <h1 class="hero-title">
+            Turning Vision Into <span class="gold-text">Visibility.</span>
+          </h1>
+          <p class="hero-copy">
+            Trevixa Media crafts scroll-stopping short-form reels, studio culinary photography,
+            distinctive brand creatives, and high-energy event &amp; sports coverage engineered to grow client attention.
+          </p>
+          <div class="hero-ctas">
+            <a href="#work" class="btn btn-primary">Explore Portfolio</a>
+            <button type="button" class="btn btn-secondary" id="openHeroLightbox">Watch Featured Reel</button>
+          </div>
+          <div class="hero-metrics">
+            <div>
+              <div class="metric-value">35+</div>
+              <div class="metric-label">Curated Production Assets</div>
+            </div>
+            <div>
+              <div class="metric-value">6</div>
+              <div class="metric-label">Specialized Content Verticals</div>
+            </div>
+            <div>
+              <div class="metric-value">End-to-End</div>
+              <div class="metric-label">Shoot, Edit &amp; Design</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-stage">
+          <div class="stage-card">
+            <video id="heroVideo" autoplay muted loop playsinline poster="media/thumbs/reels/IMG_4658.jpg">
+              <source src="media/videos/reels/IMG_4658.mp4" type="video/mp4" />
+            </video>
+            <div class="stage-overlay">
+              <div class="stage-top">
+                <span class="live-pill"><span class="live-dot"></span> <span id="heroStageTag">Featured Reel</span></span>
+                <button type="button" class="stage-sound-btn" id="heroMuteBtn">Sound: Off</button>
+              </div>
+              <div class="stage-bottom">
+                <div>
+                  <h2 class="stage-caption-title" id="heroStageTitle">Social Reel Production</h2>
+                  <p class="stage-caption-sub" id="heroStageSub">Vertical motion storytelling built for reach</p>
+                </div>
+                <div class="stage-switcher" id="heroSwitcher" aria-label="Switch Featured Reel"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Marquee -->
+    <div class="marquee-band" aria-hidden="true">
+      <div class="marquee-track">
+        <div class="marquee-item">
+          <span>Short-Form Reels</span><span class="sep">◆</span>
+          <span>Culinary &amp; Studio Photography</span><span class="sep">◆</span>
+          <span>Social Brand Creatives</span><span class="sep">◆</span>
+          <span>Hospitality &amp; Ambience</span><span class="sep">◆</span>
+          <span>Sports &amp; Action Coverage</span><span class="sep">◆</span>
+          <span>Campus Storytelling</span><span class="sep">◆</span>
+          <span>Behind The Scenes</span><span class="sep">◆</span>
+        </div>
+        <div class="marquee-item">
+          <span>Short-Form Reels</span><span class="sep">◆</span>
+          <span>Culinary &amp; Studio Photography</span><span class="sep">◆</span>
+          <span>Social Brand Creatives</span><span class="sep">◆</span>
+          <span>Hospitality &amp; Ambience</span><span class="sep">◆</span>
+          <span>Sports &amp; Action Coverage</span><span class="sep">◆</span>
+          <span>Campus Storytelling</span><span class="sep">◆</span>
+          <span>Behind The Scenes</span><span class="sep">◆</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Portfolio Archive -->
+    <section class="section" id="work">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <div class="eyebrow">Selected Archive</div>
+            <h2 class="section-title">Production &amp; Creative Portfolio</h2>
+          </div>
+          <p class="section-desc">
+            Hover over any video card for a live preview, or click any deliverable to inspect full-resolution frames and sound in cinema mode.
+          </p>
+        </div>
+
+        <div class="filter-bar" id="filterBar" role="tablist" aria-label="Filter Portfolio by Category"></div>
+
+        <div class="portfolio-grid" id="portfolioGrid"></div>
+      </div>
+    </section>
+
+    <!-- Featured Case Study -->
+    <section class="section" id="case-study">
+      <div class="container">
+        <div class="spotlight-panel">
+          <div class="spotlight-grid">
+            <div>
+              <div class="eyebrow">Featured Client Spotlight</div>
+              <h2 class="section-title">L’Unico Cafe — Full-Stack Visual Identity &amp; Culinary Launch</h2>
+              <p class="section-desc" style="margin-top: 1rem;">
+                From high-contrast tabletop food photography and pour-shot storytelling to custom campaign posters and festive table spreads, Trevixa Media unified the brand’s social feed and menu promotions into a cohesive, appetite-driven visual system.
+              </p>
+              <div class="spotlight-highlights">
+                <div class="highlight-box">
+                  <strong>Studio Stills</strong>
+                  <span>Tabletop lighting on yellow &amp; obsidian backdrops</span>
+                </div>
+                <div class="highlight-box">
+                  <strong>Campaign Posters</strong>
+                  <span>Custom typography &amp; sketch-to-color creatives</span>
+                </div>
+                <div class="highlight-box">
+                  <strong>Action Motion</strong>
+                  <span>Pour shots, steam details &amp; plated reveals</span>
+                </div>
+                <div class="highlight-box">
+                  <strong>Festive Drops</strong>
+                  <span>Themed menu campaigns built for local buzz</span>
+                </div>
+              </div>
+              <button type="button" class="btn btn-primary" id="filterDesignsBtn">View All Culinary &amp; Design Work</button>
+            </div>
+
+            <div class="spotlight-collage" id="spotlightCollage">
+              <!-- Populated by app.js so clicks open directly in the Lightbox -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Capabilities -->
+    <section class="section" id="capabilities">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <div class="eyebrow">What We Deliver</div>
+            <h2 class="section-title">Built For Modern Brands</h2>
+          </div>
+          <p class="section-desc">
+            Every shoot and creative asset is structured to serve multi-platform distribution—Reels, Stories, Paid Ads, and In-Store Menus.
+          </p>
+        </div>
+
+        <div class="cap-grid">
+          <article class="cap-card">
+            <div class="cap-num">01 / MOTION</div>
+            <h3 class="cap-title">Reels &amp; Short-Form Video</h3>
+            <p class="cap-copy">Hook-driven vertical edits, dynamic transitions, and rhythmic cuts designed to hold retention on Instagram &amp; YouTube Shorts.</p>
+            <div class="cap-tags">
+              <span class="cap-tag">9:16 Vertical</span>
+              <span class="cap-tag">Color Grading</span>
+              <span class="cap-tag">Sound Sync</span>
+            </div>
+          </article>
+
+          <article class="cap-card">
+            <div class="cap-num">02 / STUDIO</div>
+            <h3 class="cap-title">Food &amp; Product Styling</h3>
+            <p class="cap-copy">Crisp tabletop setups, dramatic studio lighting, and clean product staging that make dishes and beverages look unmistakable.</p>
+            <div class="cap-tags">
+              <span class="cap-tag">Set Styling</span>
+              <span class="cap-tag">Action Pours</span>
+              <span class="cap-tag">Menu Stills</span>
+            </div>
+          </article>
+
+          <article class="cap-card">
+            <div class="cap-num">03 / DESIGN</div>
+            <h3 class="cap-title">Campaign &amp; Brand Creatives</h3>
+            <p class="cap-copy">Poster series, festive drops, and thumb-stopping graphic composites tailored to your brand palette and offer.</p>
+            <div class="cap-tags">
+              <span class="cap-tag">Social Posts</span>
+              <span class="cap-tag">Ad Creatives</span>
+              <span class="cap-tag">Typography</span>
+            </div>
+          </article>
+
+          <article class="cap-card">
+            <div class="cap-num">04 / ON-LOCATION</div>
+            <h3 class="cap-title">Venues, Sports &amp; Campus</h3>
+            <p class="cap-copy">Atmospheric hospitality walkthroughs, high-tempo athletic highlights, school showcases, and authentic behind-the-scenes reels.</p>
+            <div class="cap-tags">
+              <span class="cap-tag">Ambience</span>
+              <span class="cap-tag">Live Action</span>
+              <span class="cap-tag">BTS Coverage</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Process -->
+    <section class="section" id="process">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <div class="eyebrow">How We Work</div>
+            <h2 class="section-title">From Concept to Campaign Launch</h2>
+          </div>
+        </div>
+        <div class="process-grid">
+          <div class="process-card">
+            <div class="process-step">STEP 01</div>
+            <h3>Creative Discovery &amp; Shot List</h3>
+            <p>We audit your brand positioning, define visual references, and lock a tight production schedule around hero dishes, spaces, or events.</p>
+          </div>
+          <div class="process-card">
+            <div class="process-step">STEP 02</div>
+            <h3>Production &amp; Visual Direction</h3>
+            <p>On-location filming, studio photography, and behind-the-scenes capture executed with cohesive lighting and movement.</p>
+          </div>
+          <div class="process-card">
+            <div class="process-step">STEP 03</div>
+            <h3>Post, Design &amp; Rollout Kit</h3>
+            <p>You receive ready-to-publish vertical reels, color-matched photos, and branded graphic creatives optimized for client conversion.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact / Project Brief -->
+    <section class="section" id="contact">
+      <div class="container contact-grid">
+        <div>
+          <div class="eyebrow">Work With Trevixa Media</div>
+          <h2 class="section-title">Ready to Put Your Brand in Frame?</h2>
+          <p class="section-desc" style="margin-top: 1rem;">
+            Tell us what you’re launching—whether it’s a café menu shoot, monthly reel retainer, sports event, or campus film. Build your brief here and copy or send it in one click.
+          </p>
+          <div class="spotlight-highlights" style="margin-top: 2rem;">
+            <div class="highlight-box">
+              <strong>Fast Turnaround</strong>
+              <span>Structured shoot-to-delivery workflow</span>
+            </div>
+            <div class="highlight-box">
+              <strong>Multi-Format Kit</strong>
+              <span>Reels, Stills &amp; Brand Creatives together</span>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact-card" id="briefForm">
+          <div class="form-grid">
+            <div class="field">
+              <label for="clientName">Your Name</label>
+              <input id="clientName" type="text" placeholder="e.g. Aarav Mehta" required />
+            </div>
+            <div class="field">
+              <label for="brandName">Brand / Business</label>
+              <input id="brandName" type="text" placeholder="e.g. L’Unico Cafe" required />
+            </div>
+            <div class="field full">
+              <label>Deliverables Needed</label>
+              <div class="service-chips" id="serviceChips">
+                <button type="button" class="chip-toggle selected" data-service="Short-Form Reels">Short-Form Reels</button>
+                <button type="button" class="chip-toggle" data-service="Food & Product Shoot">Food &amp; Product Shoot</button>
+                <button type="button" class="chip-toggle" data-service="Brand Creatives">Brand Creatives</button>
+                <button type="button" class="chip-toggle" data-service="Venue / Ambience Film">Venue / Ambience Film</button>
+                <button type="button" class="chip-toggle" data-service="Sports / Event Coverage">Sports / Event Coverage</button>
+              </div>
+            </div>
+            <div class="field">
+              <label for="timeline">Target Timeline</label>
+              <select id="timeline">
+                <option value="This Month">This Month</option>
+                <option value="Next 2 Weeks">Next 2 Weeks</option>
+                <option value="Ongoing Monthly Retainer">Ongoing Monthly Retainer</option>
+                <option value="Flexible / Exploring">Flexible / Exploring</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="contactInfo">Email or WhatsApp</label>
+              <input id="contactInfo" type="text" placeholder="you@brand.com or +91..." required />
+            </div>
+            <div class="field full">
+              <label for="projectNotes">Project Vision</label>
+              <textarea id="projectNotes" rows="3" placeholder="Tell us about your brand, location, or campaign goals..."></textarea>
+            </div>
+            <div class="field full">
+              <button type="submit" class="btn btn-primary" style="width: 100%;">Generate &amp; Copy Project Brief</button>
+            </div>
+          </div>
+          <div class="brief-output" id="briefOutput"></div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="brand">
+        <div class="brand-mark" style="width: 36px; height: 36px;">
+          <img src="media/logo/TM_Logo.jpeg" alt="Trevixa Media Logo" />
+        </div>
+        <div>
+          <strong style="letter-spacing: 0.14em; color: var(--text);">TREVIXA MEDIA</strong>
+          <span style="margin-left: 0.75rem;">Turning Vision Into Visibility</span>
+        </div>
+      </div>
+      <div>&copy; <span id="yearNow"></span> Trevixa Media. Portfolio Showcase.</div>
+    </div>
+  </footer>
+
+  <!-- Cinema Lightbox -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-labelledby="lbTitle">
+    <div class="lightbox-shell">
+      <button type="button" class="lightbox-close" id="lbClose" aria-label="Close Preview">✕</button>
+      <div class="lightbox-stage" id="lbStage"></div>
+      <div class="lightbox-info">
+        <div>
+          <div class="eyebrow" id="lbCategory">CATEGORY</div>
+          <h3 class="section-title" id="lbTitle" style="font-size: 1.55rem;">Title</h3>
+          <p class="section-desc" id="lbDesc" style="margin-top: 0.8rem;"></p>
+          <div class="cap-tags" id="lbTags" style="margin-top: 1.25rem;"></div>
+        </div>
+        <div>
+          <div class="lightbox-nav">
+            <button type="button" class="btn btn-secondary btn-sm" id="lbPrev">← Previous</button>
+            <button type="button" class="btn btn-secondary btn-sm" id="lbNext">Next →</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
